@@ -1,0 +1,244 @@
+.bodyClass {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff9f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+}
+
+.header-hola-boton {
+    max-width: 360px;
+    padding-bottom: 20px;
+
+    background-image: linear-gradient(to right, #e71c97, #ee2ea7, #f43db7, #f94ac8, #fd57d9);
+
+    border-radius: 0px 0px 20px 20px;
+    -webkit-box-shadow: 2px 7px 14px -1px rgba(214, 143, 255, 1);
+    -moz-box-shadow: 2px 7px 14px -1px rgba(214, 143, 255, 1);
+    box-shadow: 2px 7px 14px -1px rgba(214, 143, 255, 1);
+}
+
+.contenedor-tituloyp-boton {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-titulo {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.header-bienvenido {
+    color: #fff;
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.botonAdd {
+    width: 50px;
+    height: 50px;
+    margin-top: 35px;
+    margin-right: 15px;
+    margin-left: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+}
+
+.botonAdd-contenedor {
+    width: 16px;
+    height: 16px;
+}
+
+.botonAdd-imagen {
+    width: 100%;
+    height: auto;
+    margin-left: -57px;
+}
+
+.tareaNueva {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.desplegable {
+    display: flex;
+}
+.tareaNueva-barraIngresar {
+    width: 100%;
+    height: 28px;
+    float: left;
+
+    font-size: 12px;
+    font-weight: 200;
+    text-indent: 13px;
+    padding: 0 0;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px 0px 0px 0px;
+    border: 0px;
+}
+
+.tareaNueva-barraIngresar {
+    &::placeholder {
+        color: #fff;
+    }
+}
+
+.tareaNueva-descripcion {
+    &::placeholder {
+        color: #fff;
+        padding-top: 7px;
+        font-size: 12px;
+        font-weight: 200;
+        text-indent: 11px;
+    }
+}
+
+.tareaNueva-descripcion {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 28px;
+    font-size: 12px;
+    font-weight: 200;
+    text-indent: 13px;
+    padding: 0 0;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0px 0px 0px 5px;
+    border: 0px;
+    border-top: rgb(194, 194, 194) 0.5px solid;
+}
+
+.tareaNueva-botonContenedor {
+    width: 30px;
+    height: 57px;
+    padding: 1px;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0px 5px 5px 0px;
+    margin-bottom: 4px;
+    border-left: rgb(194, 194, 194) 0.5px solid;
+}
+
+.tareaNueva-botonAceptar {
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+.listas {
+    padding: 0 10px;
+}
+
+.tareasIngresadas {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.puntoytitulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+
+.puntoytitulo-contenedorImagenCirculo {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 0 10px;
+}
+
+.puntoytitulo-imagenCirculo {
+    width: 100%;
+    height: auto;
+}
+
+.puntoytitulo-tituloDeLista {
+    font-weight: 300;
+    color: rgba(124, 124, 124, 0.979);
+    font-size: 15px;
+    margin: 0 0 0 0;
+}
+
+.tarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 100px;
+
+    margin-top: 15px;
+
+    border-radius: 25px;
+
+    -webkit-box-shadow: 6px 9px 18px 0px rgba(212, 212, 212, 1);
+    -moz-box-shadow: 6px 9px 18px 0px rgba(212, 212, 212, 1);
+    box-shadow: 6px 9px 18px 0px rgba(212, 212, 212, 1);
+}
+
+.sinCompletar {
+    background-image: linear-gradient(to left, #de90ff, #c56ceb, #bc60e0, #ad3dd6, #9f29c7);
+}
+
+.completa {
+    background-color: rgb(184, 184, 184);
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.tarea-contenedorTituloyP {
+    padding-right: 0px;
+}
+
+.tarea-Titulo {
+    color: #fff;
+    margin: 0px 0px 10px 0px;
+    font-weight: 700;
+}
+
+.tarea-Descripcion {
+    color: #fff;
+    margin: 0 0 0 0;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.tarea-contenedorBotones {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.botones-tareas {
+    width: 30px;
+    height: 25px;
+    border: none;
+    background: none;
+}
+
+.tarea-botonContenedor {
+    width: 15px;
+    height: 15px;
+    margin: 0 0 0 0;
+}
+
+.tarea-boton {
+    width: 100%;
+    height: auto;
+}
+
+/*Barra que divide tareas pendientes de completadas: #d8e5e0
+Fuente dentro del listado de tareas: #444*/
