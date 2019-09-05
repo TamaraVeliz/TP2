@@ -36,8 +36,9 @@ function agregarTarea(title, descripcion) {
     descripcionCard.innerText = descripcion;
 
     let botonCheck = document.createElement('button');
-    botonCheck.classList.add('boton-aceptar', 'botones-tareas'); //boton check
-    botonCheck.addEventListener('click', elementoCompletado());
+    botonCheck.classList.add('boton-aceptar', 'botones-tareas');
+
+    //boton check
 
     let botonTrash = document.createElement('button');
     botonTrash.classList.add('boton-delete', 'botones-tareas'); // boton delete
@@ -70,15 +71,25 @@ function agregarTarea(title, descripcion) {
     apendizar(elementoCard, contenedorTituloyP);
     apendizar(elementoCard, tareaContenedorBotones);
 
+    let buttonCheck = botonCheck;
+
+    let padreCheck = buttonCheck.parentNode.parentNode;
+
+    function elementoCompletado() {
+        padreCheck.classList.add('completa');
+        padreCheck.classList.remove('sinCompletar');
+        return padreCheck;
+    }
+
+    /*botonCheck.onclick = elementoCompletado();*/
+
+    botonCheck.addEventListener('click', elementoCompletado());
+
+    console.log(padreCheck);
+
     return elementoCard;
 }
 
 function apendizar(padre, hijo) {
     return padre.appendChild(hijo);
 }
-
-function elementoCompletado() {
-    let padreUl = this;
-}
-
-console.log(elementoCompletado());

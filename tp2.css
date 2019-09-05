@@ -160,8 +160,9 @@
 .completa {
   background-color: #b8b8b8;
   align-items: center;
-  justify-content: flex-start;
-  padding-left: 20px; }
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0px; }
 
 .tarea-contenedorTituloyP {
   padding-right: 0px; }
