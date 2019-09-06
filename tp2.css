@@ -158,11 +158,7 @@
   background-image: linear-gradient(to left, #de90ff, #c56ceb, #bc60e0, #ad3dd6, #9f29c7); }
 
 .completa {
-  background-color: #b8b8b8;
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-  padding-left: 0px; }
+  background-color: #b8b8b8; }
 
 .tarea-contenedorTituloyP {
   padding-right: 0px; }

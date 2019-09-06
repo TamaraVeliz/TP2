@@ -1,0 +1,29 @@
+                <li class="tarea sinCompletar">
+                    <div class="tarea-contenedorTituloyP">
+                        <h3 class="tarea-Titulo">Dejar de ser una imbecil</h3>
+                        <p class="tarea-Descripcion">Todavia no se como</p>
+                    </div>
+                    <div class="tarea-contenedorBotones">
+                        <button class="boton-aceptar botones-tareas">
+                            <figure class="tarea-botonContenedor">
+                                <img class="tarea-boton botonCheck" src="img/check-circle-solid.png" alt="boton check" />
+                            </figure>
+                        </button>
+
+                        <button class="boton-delete botones-tareas">
+                            <figure class="tarea-botonContenedor">
+                                <img class="tarea-boton botonDelete" src="img/trash-solid.png" alt="boton delete" />
+                            </figure>
+                        </button>
+                    </div>
+                </li>
+
+
+
+
+                 <li class="tarea completa">
+                    <div class="tarea-contenedorTituloyP">
+                        <h3 class="tarea-Titulo">Ser una imbecil</h3>
+                        <p class="tarea-Descripcion">Es de nacimiento</p>
+                    </div>
+                </li>

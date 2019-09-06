@@ -13,7 +13,7 @@ botonAgregarFlecha.addEventListener('click', function() {
     let description = document.getElementById('descripcion').value;
 
     let card = agregarTarea(title, description);
-    let padre = document.querySelector('ul.listas');
+    let padre = document.querySelector('ul.todasLasTareas');
     padre.appendChild(card);
 });
 
@@ -71,25 +71,33 @@ function agregarTarea(title, descripcion) {
     apendizar(elementoCard, contenedorTituloyP);
     apendizar(elementoCard, tareaContenedorBotones);
 
-    let buttonCheck = botonCheck;
-
-    let padreCheck = buttonCheck.parentNode.parentNode;
-
-    function elementoCompletado() {
-        padreCheck.classList.add('completa');
-        padreCheck.classList.remove('sinCompletar');
-        return padreCheck;
-    }
-
     /*botonCheck.onclick = elementoCompletado();*/
 
-    botonCheck.addEventListener('click', elementoCompletado());
-
-    console.log(padreCheck);
+    botonCheck.addEventListener('click', elementoCompletado);
+    botonTrash.addEventListener('click', elementoEliminado);
 
     return elementoCard;
 }
 
 function apendizar(padre, hijo) {
     return padre.appendChild(hijo);
+}
+function elementoCompletado() {
+    let elementoPadre = this.parentNode.parentNode;
+    elementoPadre.classList.toggle('completa');
+    elementoPadre.classList.toggle('sinCompletar');
+    var clase = elementoPadre.className;
+    if (clase === 'tarea completa') {
+        let padre = document.querySelector('ul.tareasCompletadas');
+        padre.appendChild(elementoPadre);
+    } else if (clase === 'tarea sinCompletar') {
+        let padre = document.querySelector('ul.todasLasTareas');
+        padre.appendChild(elementoPadre);
+    }
+
+    console.log(clase);
+}
+function elementoEliminado() {
+    let elementoPadre = this.parentNode.parentNode;
+    elementoPadre.parentNode.removeChild(elementoPadre);
 }
